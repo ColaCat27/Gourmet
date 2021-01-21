@@ -8,6 +8,11 @@
         font-size: 18px;
         font-weight: 400;
     }
+    &_fz29 {
+        font-size: 29px;
+        color: #000;
+        line-height: 29px;
+    }
 }
 .subtitle { 
     @include gradient;
@@ -22,5 +27,9 @@
         font-size: 29px;
         line-height: normal;
         letter-spacing: 1.82px;
+    }
+    &_fz68 {
+        font-size: 68px;
+        line-height: 68px;
     }
 }
