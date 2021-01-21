@@ -18,14 +18,16 @@
     }
     &__item {
         position: relative;
+        transition: all .3s;
     }
     &__link {
         color: #ffffff;
         font-family: "Nexa Black";
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
         text-transform: uppercase;
         text-decoration: none;
+        transition: all .3s;
         &::before {
             content: '';
             opacity: 0;
@@ -36,19 +38,15 @@
             background-image: linear-gradient(to left, #ac7a2b 0%, #ecd16e 100%), linear-gradient(to top, #d5b470 0%, #a57831 100%);
             transition: all .3s;
         }
-        &_active {
+        &:hover {
+            color: #fff;
+            text-decoration: none;
             @include gradient;
             color: #000000;
-            font-size: 19px;
-            font-weight: 700;
             text-transform: uppercase;
             &::before {
                 opacity: 1;
             }
-        }
-        &:hover {
-            color: #fff;
-            text-decoration: none;
         }
     }
 }
