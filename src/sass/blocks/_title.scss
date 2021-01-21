@@ -1,0 +1,26 @@
+.title {
+    color: #fdfdfd;
+    font-size: 43px;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    &_fz18 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+.subtitle { 
+    @include gradient;
+    font-size: 101px;
+    font-weight: 800;
+    line-height: 81.13px;
+    text-align: left;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: -1.07px;
+    &_fz29 {
+        font-size: 29px;
+        line-height: normal;
+        letter-spacing: 1.82px;
+    }
+}
