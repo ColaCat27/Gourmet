@@ -1,4 +1,5 @@
 .btn {
+    position: relative;
     width: 183px;
     height: 46px;
     border-radius: 10px;
@@ -10,4 +11,17 @@
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
+    &_white {
+        box-shadow: 0 8px 35px rgba(0, 0, 0, 0.2);
+        background: #fff;
+    }
+    &_text-yellow {
+        color: #edb214;
+    }
+    &_text-grey {
+        color: #9a9a9a;
+    }
+    &_text-black {
+        color: #000000;
+    }
 }

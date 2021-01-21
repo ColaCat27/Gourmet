@@ -1,0 +1,38 @@
+.showcase {
+    overflow: hidden;
+    background-color: #000;
+    &__item {
+        width: 425px;
+        padding: 54px 35px 34px 35px;
+        margin: 5px 3px 5px 3px;
+        cursor: pointer;
+        &_yellow {
+            background-image: $gradient;
+        }
+        &_grey {
+            background-image: linear-gradient(to top, #aeaeae 0%, #d4d4d4 100%);
+        }
+        &_black {
+            background-image: linear-gradient(to top, #000000 0%, #494949 100%);
+        }
+    }
+    &__title {
+        margin-left: 57px;
+    }
+    &__subtitle {
+        margin-left: 40px;
+    }
+    &__name {
+        &:first-child {
+            margin-left: 8px;
+        }
+    }
+    &__img {
+        margin-top: 70px;
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}

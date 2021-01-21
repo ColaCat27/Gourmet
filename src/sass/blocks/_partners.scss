@@ -1,0 +1,40 @@
+.partners {
+    padding: 70px 0 290px 0;
+    background-color: #000;
+    &__title {
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 33px;
+    }
+    &__img {
+        &:nth-child(1) {
+            img {
+                display: block;
+                width: 206px;
+                height: 123px;
+                margin: 0 auto;
+            }
+        }
+        &:nth-child(2) {
+            img {
+                display: block;
+                width: 265px;
+                height: 260px;
+                margin: 0 auto;
+            }
+        }
+        &:nth-child(3) {
+            img {
+                display: block;
+                width: 125px;
+                height: 158px;
+                margin: 0 auto;
+            }
+        }
+        
+    }
+}

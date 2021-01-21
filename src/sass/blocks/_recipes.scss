@@ -1,0 +1,40 @@
+.recipes {
+    position: relative;
+    background-color: transparent;
+    height: 590px;
+    &__slider {
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: -209px;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__slide {
+        position: relative;
+        background-color: #000;
+        &.swiper-slide {
+            width: 1043px!important;
+            margin: 0 3.5px;
+        }
+        &.swiper-slide-prev, &.swiper-slide-next {
+            img {
+                opacity: 0.3;
+            }
+        }
+    }
+    &__arrows {
+        &-item {
+            position: absolute;
+            width: 66px;
+            height: 66px;
+            &_prev {
+                left: 0px;
+            }
+            &_next {
+                right: 0px;
+            }
+        }
+    }
+}

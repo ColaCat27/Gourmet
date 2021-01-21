@@ -8,10 +8,17 @@
         font-size: 18px;
         font-weight: 400;
     }
+    &_fz27 {
+        font-size: 27px;
+        letter-spacing: -1.98px;
+    }
     &_fz29 {
         font-size: 29px;
         color: #000;
         line-height: 29px;
+    }
+    &_white {
+        color: #fff;
     }
 }
 .subtitle { 
@@ -28,8 +35,20 @@
         line-height: normal;
         letter-spacing: 1.82px;
     }
+    &_fz31 {
+        font-size: 31px;
+        line-height: 31px;
+    }
+    &_fz65 {
+        font-size: 65px;
+        line-height: 50.91px;
+        letter-spacing: -2.4px;
+    }
     &_fz68 {
         font-size: 68px;
         line-height: 68px;
+    }
+    &_white {
+        @include white;
     }
 }
