@@ -1,0 +1,48 @@
+.find {
+    background: url('../../img/find/find-bg.png') center ( center / cover ) no-repeat;
+    height: 1229px;
+    padding-top: 490px;
+    &__title {
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+        margin-bottom: 52px;
+    }
+    &__slider {
+        overflow: hidden;
+        margin-bottom: 52px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__descr {
+        width: 785px;
+        margin: 0 auto;
+        color: #353535;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: -0.4px;
+        margin-bottom: 29px;
+    }
+    &__partners-item {
+        width: auto;
+        margin: 0 12.5px;
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 321px;
+            max-height: 119px;
+        }
+        &.swiper-slide {
+            width: auto !important;
+        }
+    }
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+}

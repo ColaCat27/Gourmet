@@ -33,5 +33,15 @@ const recipes = new Swiper('.recipes__slider', {
   slidesPerView: 'auto',
   loop: true,
   centeredSlides: true,
-  spaceBetween: 30
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.recipes__arrows-item_next',
+    prevEl: '.recipes__arrows-item_prev',
+  }
 });
+
+const find = new Swiper('.find__slider', {
+    slidesPerView: 8,
+    centeredSlides: true,
+    loop: true
+  });

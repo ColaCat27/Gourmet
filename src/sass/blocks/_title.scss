@@ -4,6 +4,10 @@
     font-weight: 800;
     font-style: italic;
     text-transform: uppercase;
+    &_fz16 {
+        font-size: 16px;
+        font-weight: 400;
+    }
     &_fz18 {
         font-size: 18px;
         font-weight: 400;
@@ -19,6 +23,9 @@
     }
     &_white {
         color: #fff;
+    }
+    &_black {
+        color: #000;
     }
 }
 .subtitle { 
@@ -38,6 +45,14 @@
     &_fz31 {
         font-size: 31px;
         line-height: 31px;
+    }
+    &_fz35 {
+        font-size: 35px;
+        line-height: 27.8px;
+    }
+    &_fz41 {
+        font-size: 41px;
+        line-height: 47.3px;
     }
     &_fz65 {
         font-size: 65px;

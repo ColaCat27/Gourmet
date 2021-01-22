@@ -1,0 +1,41 @@
+.about {
+    height: 140px;
+    position: relative;
+    &__wrapper {
+        position: absolute;
+        top: -150px;
+        border: 10px;
+    }
+    &__contacts {
+        background-color: #f2f2f2;
+        border-radius: 10px 0 0 10px;
+        padding: 126px 0 126px 92px;
+        height: 573px;
+        margin: 0;
+    }
+    &__list {
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        &-item {
+            margin-bottom: 25px;
+        }
+    }
+    &__map {
+        border-radius: 10px 0 0 10px;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    &__img {
+        width: 600px;
+        height: 573px;
+        border-radius: 0px 10px 10px 0;
+    }
+    &__btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

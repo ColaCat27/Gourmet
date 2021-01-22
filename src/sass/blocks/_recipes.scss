@@ -1,9 +1,9 @@
 .recipes {
     position: relative;
     background-color: transparent;
-    height: 590px;
     &__slider {
         width: 100%;
+        height: 590px;
         overflow: hidden;
         position: absolute;
         top: -209px;
@@ -12,15 +12,22 @@
         display: flex;
     }
     &__slide {
+        border-radius: 10px;
         position: relative;
         background-color: #000;
         &.swiper-slide {
+            height: 521px;
             width: 1043px!important;
-            margin: 0 3.5px;
         }
         &.swiper-slide-prev, &.swiper-slide-next {
             img {
-                opacity: 0.3;
+                opacity: 0.2;
+            }
+            .recipes__arrows {
+                display: none;
+            }
+            .recipes__block {
+                opacity: 0;
             }
         }
     }
@@ -29,11 +36,75 @@
             position: absolute;
             width: 66px;
             height: 66px;
+            border-radius: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: all .3s;
             &_prev {
-                left: 0px;
+                background-image: $gradient;
+                left: -40px;
+                i {
+                    color: #fff;
+                    font-size: 25px;
+                }
             }
             &_next {
-                right: 0px;
+                right: -40px;
+                background-color: #fff;
+                i {
+                    color: #ecd16e;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    &__block {
+        width: 828px;
+        z-index: 10;
+        position: absolute;
+        bottom: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        background-image: $gradient;
+        padding: 27px 55px 29px 35px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        margin-left: 13px;
+    }
+    &__name {
+        &:first-child {
+            margin-left: 6px;
+        }
+    }
+    &__list {
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        &-item {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 14px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            span {
+                font-size: 24px;
+                font-weight: 700;
+                font-style: italic;
+                letter-spacing: -1.66px;
             }
         }
     }
