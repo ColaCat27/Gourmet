@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 const menu = ['Slide 1', 'Slide 2', 'Slide 3']
 const mySwiper = new Swiper ('.swiper-container', {
     // If we need pagination
@@ -86,14 +87,16 @@ function menuToggle() {
 menuToggle();
 
 function smoothScrolling(selector) {
-  const links = document.querySelectorAll(selector);
+  const links = document.querySelectorAll(selector),
+        menu = document.querySelector('.header__nav');
 
   links.forEach(item => {
     item.addEventListener('click', (e) => {
       e.preventDefault();
       let blockName = item.getAttribute('href').slice(1),
           elem = document.querySelector(`#${blockName}`);
-        
+      
+      menu.classList.remove('header__nav_active');
       elem.scrollIntoView({behavior: 'smooth'});
     });
   });
@@ -102,3 +105,4 @@ function smoothScrolling(selector) {
 
 smoothScrolling('.header__link');
 smoothScrolling('.footer__menu-link');
+});
