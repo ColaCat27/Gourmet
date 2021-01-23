@@ -84,3 +84,21 @@ function menuToggle() {
 };
 
 menuToggle();
+
+function smoothScrolling(selector) {
+  const links = document.querySelectorAll(selector);
+
+  links.forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      let blockName = item.getAttribute('href').slice(1),
+          elem = document.querySelector(`#${blockName}`);
+        
+      elem.scrollIntoView({behavior: 'smooth'});
+    });
+  });
+  
+};
+
+smoothScrolling('.header__link');
+smoothScrolling('.footer__menu-link');
