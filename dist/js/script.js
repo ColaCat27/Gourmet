@@ -24,8 +24,30 @@ const showCase = new Swiper('.showcase__slider', {
   slidesPerView: 5,
   spaceBetween: 1,
   loop: true,
-  autoplay: {
-    delay: 1200
+  // autoplay: {
+  //   delay: 1200
+  // },
+  breakpoints: {
+    320: {
+      slidesPerView: 3,
+      spaceBetween: 1,
+    },
+    576: {
+      slidesPerView: 3,
+      spaceBetween: 1,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 1,
+    },
+    1400: {
+      slidesPerView: 4,
+      spaceBetween: 1,
+    },
+    1600: {
+      slidesPerView: 5,
+      spaceBetween: 1,
+    }
   }
 });
 
@@ -41,7 +63,24 @@ const recipes = new Swiper('.recipes__slider', {
 });
 
 const find = new Swiper('.find__slider', {
-    slidesPerView: 8,
+    slidesPerView: 3,
     centeredSlides: true,
     loop: true
+});
+
+function menuToggle() {
+  const burger = document.querySelector('.header__burger'),
+      menu = document.querySelector('.header__nav'),
+      close = document.querySelector('.header__close');
+
+  burger.addEventListener('click', () => {
+    menu.classList.add('header__nav_active');
   });
+
+  close.addEventListener('click', () => {
+      menu.classList.remove('header__nav_active');
+  });
+  
+};
+
+menuToggle();

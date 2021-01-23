@@ -1,0 +1,558 @@
+@media (max-width: 1200px) {
+    .promo {
+        &__subtitle {
+            font-size: 90px;
+        }
+    }
+    .story {
+        &__block {
+            padding: 209px 0 209px 60px;
+        }
+    }
+    .showcase {
+        &__title {
+            transform: translateX(5px);
+        }
+        .subtitle_fz65 {
+            font-size: 60px;
+        }
+    }
+    .recipes {
+        &__slide.swiper-slide {
+            width: 850px !important;
+        }
+        &__block {
+            width: 700px;
+        }
+    }
+    .about {
+        &__contacts {
+            padding: 126px 0 126px 55px;
+        }
+        .subtitle_fz41 {
+            font-size: 32px;
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+    .footer {
+        &__form {
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .header {
+        position: relative;
+        &__nav {
+            position: absolute;
+            height: 100vh;
+            width: 50%;
+            right: -100%;
+            top: 0px;
+            background-color: #000;
+            z-index: 10;
+            padding-top: 70px;
+            padding-left: 30px;
+            transition: all .3s;
+            &_active {
+                right: 0;
+            }
+        }
+        &__menu {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &__item {
+            margin-bottom: 10px;
+        }
+        &__link {
+            font-size: 30px;
+        }
+        &__close {
+            position: absolute;
+            display: block;
+            top: 0px;
+            right: 0px;
+            border: none;
+            background-color: transparent;
+            font-size: 70px;
+            background-image: $gradient;
+            color: #fff;
+            line-height: 45px;
+        }
+        &__burger {
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: $gradient;
+            border-radius: 5px;
+            div {
+                margin-bottom: 5px;
+                width: 30px;
+                height: 3px;
+                background-color: #fff;
+                z-index: 10;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .promo {
+        &__title {
+            font-size: 30px;
+        }
+        &__subtitle {
+            font-size: 65px;
+            line-height: 65px;
+        }
+    }
+    .story {
+        height: 1285px;
+        &__preview {
+            width: 100%;
+            height: 785px;
+        }
+        &__block {
+            height: 650px;
+            padding: 120px 0 100px 60px;
+            border-radius: 0 0px 10px 10px;
+        }
+    }
+    .showcase {
+        &__title {
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+            width: 100%;
+        }
+        &__name {
+            &:first-child {
+                margin-left: 0px;
+            }
+            margin-left: 0px;
+        }
+        .title_fz27 {
+            font-size: 22px;
+            transform: translateX(0px);
+        }
+        .subtitle_fz65 {
+            font-size: 45px;
+            line-height: 36px;
+        }
+        &__img {
+            margin-top: 30px;
+        }
+    }
+    .recipes {
+        &__slide.swiper-slide {
+            width: 700px !important;
+        }
+        &__block {
+            padding: 27px 10px 29px 10px;
+            width: 670px;
+        }
+    }
+    .about {
+        height: 80px;
+        &__contacts {
+            padding: 70px 0 70px 55px;
+            height: 480px;
+        }
+        &__img {
+            height: 480px;
+        }
+        .title_fz27 {
+            font-size: 22px;
+        }
+        .subtitle_fz41 {
+            font-size: 24px;
+        }
+    }
+    .footer {
+        padding-top: 450px;
+        &__menu {
+            &-link {
+                font-size: 19px;
+            }
+        }
+        &__logo {
+            img {
+                width: 100%;
+                height: 70px;
+            }
+        }
+        &__social {
+            margin-left: 10px;
+            &-item {
+                width: 27px;
+                height: 22px;
+                svg {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+        &__recent {
+            font-size: 16px;
+        }
+        &__form {
+            input {
+                height: 60px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .promo {
+        height: 835px;
+        &__title {
+            font-size: 23px;
+        }
+        &__subtitle {
+            font-size: 54px;
+            line-height: 54px;
+        }
+        &__dotts {
+            flex-direction: row;
+            top: 60%;
+            left: 15%;
+            .swiper-pagination-bullet {
+                margin: 0 3px;
+            }
+        }
+        &__create {
+            right: 5%;
+            bottom: 22%;
+        }
+    }
+    .story {
+        height: 875px;
+        &__preview {
+            height: 495px;
+        }
+        &__block {
+            height: 530px;
+            padding: 50px 0 50px 60px;
+        }
+    }
+    .recipes {
+        &__slide.swiper-slide {
+            width: 490px !important;
+        }
+        &__block {
+            width: 460px;
+            padding: 10px 10px 10px 10px;
+        }
+        &__caption {
+            margin-bottom: 10px;
+        }
+        &__title {
+            margin-left: 0;
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__name {
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        &__list {
+            margin-bottom: 10px;
+            text-align: center;
+            &-item {
+                font-size: 15px;
+                margin-bottom: 8px;
+                span {
+                    font-size: 17px;
+                }
+            }
+        }
+        &__btn {
+            width: 115px;
+            height: 40px;
+            font-size: 13px;
+        }
+        .title_fz16 {
+            font-size: 13px;
+        }
+        .subtitle_fz35 {
+            font-size: 23px;
+            line-height: 23px;
+        }
+    }
+    .about {
+        &__contacts {
+            padding: 70px 0 70px 20px;
+            height: 400px;
+        }
+        &__list {
+            &-item {
+                margin-bottom: 15px;
+            }
+        }
+        &__img {
+            height: 400px;
+        }
+        .title_fz27 {
+            font-size: 18px;
+        }
+        .subtitle_fz41 {
+            font-size: 20px;
+        }
+    }
+    .footer {
+        height: 570px;
+        padding-top: 300px;
+        &__menu {
+            &-link {
+                font-size: 13px;
+            }
+        }
+        &__logo {
+            img {
+                height: 50px;
+            }
+        }
+        &__social {
+            margin-left: 0px;
+            &-item {
+                width: 20px;
+                height: 20px;
+                svg {
+                    width: 11px;
+                    height: 11px;
+                }
+            }
+        }
+        &__recent {
+            font-size: 12px;
+        }
+        &__form {
+            input {
+                padding: 10px 0 10px 15px;
+                font-size: 14px;
+                height: 40px;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .title_fz29 {
+        font-size: 20px;
+    }
+    .subtitle_fz68 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .header {
+        &__burger {
+            padding: 5px;
+            div {
+                margin-bottom: 3px;
+                width: 20px;
+                height: 2px;
+            }
+        }
+    }
+    .promo {
+        height: 700px;
+        &__title {
+            font-size: 13px;
+            margin-left: 15px;
+        }
+        &__subtitle {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &__name {
+            &:first-child {
+                margin-left: 8px;
+            }
+        }
+        &__dotts {
+            left: 5%;
+        }
+        &__available {
+            margin-left: 9px;
+        }
+        &__create {
+            width: auto;
+            right: 5%;
+            bottom: 25%;
+        }
+        &__made {
+            font-size: 18px;
+            span {
+                font-size: 30px;
+            }
+        }
+        .btn {
+            width: 130px;
+            height: 31px;
+            font-size: 12px;
+        }
+        &__btn {
+            margin-top: 20px;
+        }
+        .title_fz18 {
+            font-size: 12px;
+        }
+        .subtitle_fz29 {
+            font-size: 13px;
+        }
+    }
+    .story {
+        &__block {
+            padding: 50px 0 50px 0px;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__descr {
+            font-size: 13px;
+            width: 280px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__list {
+            &-item {
+                text-align: center;
+            }
+        }
+        &__btn {
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+    }
+    .showcase {
+        &__item {
+            padding: 27px 20px 20px 20px;
+        }
+        .title_fz27 {
+            font-size: 12px;
+            transform: translateX(0px);
+        }
+        .subtitle_fz65 {
+            font-size: 25px;
+            line-height: 25px;
+        }
+        &__name {
+            &:first-child {
+                margin-left: 0px;
+                margin-bottom: 0px;
+            }
+        }
+        &__img {
+            margin-top: 15px;
+        }
+        &__btn {
+            margin-top: 15px;
+        }
+        .btn {
+            width: 100px;
+            height: 30px;
+            font-size: 11px;
+        }
+    }
+    .recipes {
+        &__slide.swiper-slide {
+            width: 240px !important;
+            height: 300px;
+        }
+        &__block {
+            width: 280px;
+            flex-direction: column;
+            bottom: -150px;
+        }
+    }
+    .find {
+        height: 1100px;
+        padding-top: 310px;
+        &__subtitle {
+            margin-bottom: 20px;
+        }
+        &__slider {
+            margin-bottom: 20px;
+        }
+        &__descr {
+            margin-bottom: 30px;
+        }
+        &__partners {
+            img {
+                max-width: 150px;
+                max-height: 100px;
+            }
+        }
+    }
+    .about {
+        &__wrapper {
+            left: 54%;
+        }
+        &__contacts {
+            padding: 50px 0 0px 10px;
+            height: 300px;
+        }
+        &__map {
+            img {
+                height: 300px;
+            }
+        }
+        .title_fz27 {
+            font-size: 11px;
+        }
+        .subtitle_fz41 {
+            font-size: 12px;
+        }
+        .btn {
+            width: 110px;
+            height: 30px;
+            font-size: 12px;
+        }
+    }
+    .footer {
+        padding-top: 160px;
+        .row {
+            flex-direction: column;
+        }
+        &__menu {
+            display: flex;
+            justify-content: space-around;
+        }
+        &__social {
+            justify-content: center;
+        }
+        &__logo {
+            img {
+                display: block;
+                width: 100px;
+                height: 50px;
+                margin: 0 auto;
+            }
+        }
+        &__news {
+            margin-top: 20px;
+        }
+        &__recent {
+            text-align: center;
+        }
+    }
+}

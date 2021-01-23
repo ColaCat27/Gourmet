@@ -1,6 +1,6 @@
 .promo {
     position: relative;
-    min-height: 968px;
+    height: 968px;
     &__slider {
         width: 100%;
         height: 968px;
@@ -12,9 +12,8 @@
     }
     &__dotts {
         position: absolute;
-        left: 60px;
+        left: 1.2%;
         top: 33%;
-        height: 71px;
         display: flex;
         flex-direction: column;
     }

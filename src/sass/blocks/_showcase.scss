@@ -17,17 +17,24 @@
         }
     }
     &__title {
-        margin-left: 57px;
+       text-align: center;
+       transform: translateX(-10px);
     }
     &__subtitle {
-        margin-left: 40px;
+        width: 282px;
+        margin: 0 auto;
     }
     &__name {
         &:first-child {
-            margin-left: 8px;
+            margin-left: 14px;
+            margin-bottom: 8px;
+        }
+        &:last-child {
+            margin-left: 4px;
         }
     }
     &__img {
+        width: 100%;
         margin-top: 70px;
     }
     &__btn {
