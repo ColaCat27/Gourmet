@@ -59,7 +59,7 @@
             padding-left: 30px;
             transition: all .3s;
             &_active {
-                right: 0;
+                right: 0%;
             }
         }
         &__menu {
@@ -88,8 +88,7 @@
         &__burger {
             position: absolute;
             right: 10%;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 5%;
             padding: 10px;
             display: flex;
             flex-direction: column;
@@ -102,7 +101,7 @@
                 width: 30px;
                 height: 3px;
                 background-color: #fff;
-                z-index: 10;
+                z-index: 1;
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -216,6 +215,11 @@
     }
 }
 @media (max-width: 767px) {
+    .header {
+        &__link {
+            font-size: 23px;
+        }
+    }
     .promo {
         height: 835px;
         &__title {
@@ -360,13 +364,24 @@
         line-height: 40px;
     }
     .header {
+        &__menu {
+            align-items: center;
+        }
         &__burger {
+            top: 7%;
             padding: 5px;
             div {
                 margin-bottom: 3px;
                 width: 20px;
                 height: 2px;
             }
+        }
+        &__link {
+            font-size: 20px;
+        }
+        &__nav {
+            padding-left: 0;
+            width: 70%;
         }
     }
     .promo {
