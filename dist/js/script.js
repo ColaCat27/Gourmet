@@ -24,9 +24,9 @@ const showCase = new Swiper('.showcase__slider', {
   slidesPerView: 5,
   spaceBetween: 1,
   loop: true,
-  // autoplay: {
-  //   delay: 1200
-  // },
+  autoplay: {
+    delay: 1200
+  },
   breakpoints: {
     320: {
       slidesPerView: 3,
@@ -63,9 +63,9 @@ const recipes = new Swiper('.recipes__slider', {
 });
 
 const find = new Swiper('.find__slider', {
-    slidesPerView: 3,
-    centeredSlides: true,
-    loop: true
+    slidesPerView: 8,
+    loop: true,
+    centeredSlides: true
 });
 
 function menuToggle() {

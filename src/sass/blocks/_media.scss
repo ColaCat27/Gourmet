@@ -72,6 +72,11 @@
         }
         &__link {
             font-size: 30px;
+            &:hover {
+                &::before {
+                    opacity: 0;
+                }
+            }
         }
         &__close {
             position: absolute;

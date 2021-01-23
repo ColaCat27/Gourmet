@@ -20,6 +20,7 @@
             width: 1043px!important;
         }
         &.swiper-slide-prev, &.swiper-slide-next {
+            z-index: -1;
             img {
                 opacity: 0.2;
             }
@@ -32,6 +33,7 @@
         }
     }
     &__arrows {
+        z-index: 2;
         &-item {
             position: absolute;
             width: 66px;
@@ -111,6 +113,14 @@
                 font-style: italic;
                 letter-spacing: -1.66px;
             }
+        }
+    }
+    &__btn {
+        i {
+            padding-left: 10px;
+        }
+        &:hover {
+            transform: scale(1.1);
         }
     }
 }

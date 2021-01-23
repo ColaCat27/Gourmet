@@ -23,6 +23,10 @@
         width: 140px;
         height: 140px;
         cursor: pointer;
+        transition: all .3s;
+        &:hover {
+            filter: saturate(200%);
+        }
     }
     &__block {
         border-radius: 0 10px 0 0;
@@ -75,5 +79,11 @@
     }
     &__btn {
         margin-top: 27px;
+        i {
+            padding-left: 10px;
+        }
+        &:hover {
+            border: 1px solid #bb8e3a;
+        }
     }
 }

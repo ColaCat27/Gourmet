@@ -66,6 +66,23 @@
         }
     }
     &__form {
+        &-block {
+            position: relative;
+            color: #000;
+            background-color: #000;
+            transition: all .3s;
+            &::after {
+                    position: absolute;
+                    content: '';
+                    background: url('../../icons/paper-plane.png') center ( center / cover) no-repeat;
+                    width: 16px;
+                    height: 16px;
+                    right: 30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition:  all .3s;
+            }
+        }
         input {
             width: 344px;
             height: 68px;

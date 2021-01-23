@@ -41,5 +41,8 @@
         display: block;
         margin: 0 auto;
         margin-top: 40px;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }

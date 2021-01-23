@@ -45,5 +45,8 @@
     &__btn {
         display: block;
         margin: 0 auto;
+        &:hover {
+            border: 1px solid #bb8e3a;
+        }
     }
 }
