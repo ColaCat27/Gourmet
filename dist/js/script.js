@@ -106,3 +106,15 @@ function smoothScrolling(selector) {
 smoothScrolling('.header__link');
 smoothScrolling('.footer__menu-link');
 });
+
+function openMap() {
+  const btn = document.querySelector('.about__btn'),
+        overlay = document.querySelector('.about__overlay');
+  
+  btn.addEventListener('click', () => {
+      btn.classList.add('about__btn_active');
+      overlay.classList.add('about__overlay_active');
+  });
+};
+
+openMap();
